@@ -4,9 +4,9 @@ public class Camion extends Vehiculo {
 
 	private byte numeroEjes;
 
-	public Camion (byte numRuedas) 
+	public Camion (String string) 
 	{
-		super (numRuedas);
+		super (string);
 	}
 
 	public Camion (String color, byte numRuedas) 
@@ -41,6 +41,13 @@ public class Camion extends Vehiculo {
 	{
 		this.numeroEjes = numEjes;
 	}
-
+	
+	 protected void verCamion() {
+			System.out.println("El vehiculo es de color "+getColor());
+			System.out.println("Tiene "+getNumRuedas()+" numero de ruedas");
+			System.out.println("Con una cilindrada de"+getCilindrada());
+			System.out.println("Y una potencia de"+getPotencia());
+			//System.out.println("Tiene "+getnumeroPlazas+" numero de plazas");
+		}
 }
 

@@ -72,6 +72,15 @@ public class Vehiculo {
 		 {
 			 this.numeroRuedas = numRuedas;
 		 } 
+		 
+		 protected void verVehiculo() {
+				System.out.println("El vehiculo es de color "+getColor());
+				System.out.println("Tiene "+getNumRuedas()+" numero de ruedas");
+				System.out.println("Con una cilindrada de"+getCilindrada());
+				System.out.println("Y una potencia de"+getPotencia());
+				//System.out.println("Tiene "+getnumeroPlazas+" numero de plazas");
+			}
+			
 }
 
 
